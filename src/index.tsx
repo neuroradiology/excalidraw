@@ -483,12 +483,13 @@ export class App extends React.Component<any, AppState> {
     );
   }
 
-  private renderShapeLock() {
+  private renderShapeLock(title: string) {
     const { elementLocked } = this.state;
     return (
       <LockIcon
         checked={elementLocked}
         onChange={() => this.setState({ elementLocked: !elementLocked })}
+        title={title}
       />
     );
   }
@@ -520,7 +521,7 @@ export class App extends React.Component<any, AppState> {
             ></ToolIcon>
           );
         })}
-        {this.renderShapeLock()}
+        {this.renderShapeLock(t("toolBar.lock"))}
       </>
     );
   }

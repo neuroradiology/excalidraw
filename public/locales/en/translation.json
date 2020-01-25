@@ -61,6 +61,7 @@
     "ellipse": "Ellipse",
     "arrow": "Arrow",
     "line": "Line",
-    "text": "Text"
+    "text": "Text",
+    "lock": "Lock the currently selected element"
   }
 }
